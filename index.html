@@ -10,24 +10,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- MENU & SUB MENU -->
-    <h1 id="menu">Menu</h1>
-        <h2 class="submenu">About Me</h2>
-        <h2 class="submenu">Work History</h2>
-        <h2 class="submenu">Blog</h2>
+    <!-- MENU & SUB-MENU CONTAINER -->
+    <div class="menucombo">
+        <!-- MENU -->
+        <h1 id="menu">MENU</h1>
 
-            <!-- LOGO SECTION -->
+        <!-- SUB-MENU SECTION -->
+        <div class="subitems">
+        <a href="about.html" class="submenu" id="aboutme">About Me</a>
+        <a href="work.html" class="submenu" id="workhistory">Work History</a>
+        <a href="blog.html" class="submenu" id="blog">Blog</a>
+        </div>
+    </div>
+
+    <img id="welcome" src="background.jpg" alt="Welcome image">
+
+
+
+    <!-- LOGO & NAME,EMAIL, MOBILE CONTAINER -->
+    <div class="bottomcombo">
+        <!-- LOGO SECTION -->
+        <div class="logomain">
             <div class="logo">
-            <img class="gitlinkicon" src="github.svg" alt="GitHub Icon">
-            <img class="gitlinkicon" src="linkedin-mark.png" alt="Linkedin Icon">
-            </div>
-            
-    <!-- NAME, EMAIL & MOBILE -->
-    <h2 class="nameemailmobile">Name</h2>
-    <h2 class="nameemailmobile">Email</h2>
-    <h2 class="nameemailmobile">Mobile</h2>
+                <a href="https://github.com/chrismyhub">
+                    <img class="gitlinkicon" src="github.svg" alt="GitHub Icon">
+                </a>
+                <a href="https://www.linkedin.com/in/chriskychong/">
+                    <img class="gitlinkicon" src="linkedin-mark.png" alt="Linkedin Icon">
+                </a>
+        </div>
+        </div>
+
+        <!-- NAME, EMAIL & MOBILE -->
+        <div class="nem">
+        <h2 class="nameemailmobile" id="name">Christopher Chong</h2>
+        <h2 class="nameemailmobile" id="email">keyoch@gmail.com</h2>
+        <h2 class="nameemailmobile" id="mobile">0400 587 273</h2>
+        </div>
+    </div>
+
 </body>
 
 <!-- COPYRIGHT -->
-<footer>&copy;Copyright 2022.  All Rights Reserved.</footer>
+<footer><strong>&copy;Copyright 2022.  All Rights Reserved.</strong></footer>
 </html>

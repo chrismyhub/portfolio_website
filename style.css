@@ -3,7 +3,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+    font-family: 'Courier New', Courier, monospace;
+  
+}
+/* BACKGROUND */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("background.jpg") 21% 60%; 
+    background-repeat: no-repeat;
+}
 
 /* MENU BOX */
 #menu {
@@ -11,8 +22,17 @@
     width: 100%;
     height: 100px;
     border: 1px solid black;
+    border-bottom: none;
     justify-content: center;
     align-items: center;
+}
+
+/* MENU & SUB-MENU CONTAINER */
+.menucombo{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: hsla(0, 100%, 50%, 0.2);
 }
 
 /* ABOUT ME, WORK HISTORY & BLOG BOXES */
@@ -21,8 +41,29 @@
     width: 100%;
     height: 50px;
     border: 1px solid black;
+    border-bottom: none;
     justify-content: center;
     align-items: center;
+    font-size: large;
+    font-weight: 1000;
+    text-decoration: none;
+}
+
+/* SUB-MENU CONTAINER */
+.subitems{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* MISSING BOTTOM BORDER - MOBILE BOX */
+#blog{
+    border-bottom: 1px solid black;
+}
+
+/* NO WELCOME IMAGE - MOBILE */
+#welcome {
+    width: 0px;
 }
 
 /* LOGO ICONS RESIZE */
@@ -30,25 +71,88 @@
     width: 70px;
     height: 60px;
 }
+/* LOGO SECTION - MOBILE*/
+.logomain{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* LOGO ALIGNMENT*/
-div.logo{
+.logo {
+    width:180px;
+    padding: 40px 0px 150px 0px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+}
+
+/* LOGO & NAME,EMAIL, MOBILE SHARED SPACE */
+.bottomcombo {
+    width: 100%;
+}
+
+.nem {
+    background-color: hsla(0, 100%, 50%, 0.2);
 }
 
 /* NAME, EMAIL & MOBILE */
 .nameemailmobile {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 50px;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 /* COPYRIGHT */
 footer {
-    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    background-color: hsla(0, 98%, 50%, 0.2);
+}
+
+/* TABLET DISPLAY SIZE CONFIGURATION */
+@media only screen and (min-width: 800px) and (max-width: 1400px) {
+    
+    .menucombo {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #menu {
+        height: 75px;
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+
+    .submenu {
+        height: 25px;
+    }
+
+    .bottomcombo {
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: hsla(0, 100%, 50%, 0.2);
+    }
+
+    div.logo {
+        padding: 0;
+    }
+    .nem {
+        background-color: transparent;
+    }
+
+    #welcome {
+        width: 500px;
+        border-radius: 50%;
+    }
 }
