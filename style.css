@@ -13,14 +13,15 @@ body {
     align-items: center;
     justify-content: center;
     background: url("background.jpg") 21% 60%; 
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size:auto;
 }
 
 /* MENU BOX */
 #menu {
     display:flex;
     width: 100%;
-    height: 100px;
+    height: 35px;
     border: 1px solid black;
     border-bottom: none;
     justify-content: center;
@@ -39,7 +40,7 @@ body {
 .submenu {
     display:flex;
     width: 100%;
-    height: 50px;
+    height: 20px;
     border: 1px solid black;
     border-bottom: none;
     justify-content: center;
@@ -61,9 +62,71 @@ body {
     border-bottom: 1px solid black;
 }
 
-/* NO WELCOME IMAGE - MOBILE */
-#welcome {
-    width: 0px;
+/* ABOUT ME/WORK HISTORY - TITLE & IMAGE */
+#abouttitle {
+    display:flex;
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    border-top: none;
+    justify-content: center;
+    align-items: center;
+    background-color: hsla(0, 7%, 95%, 0.379);
+    color: black;
+}
+
+#abouttext {
+    padding: 0px 20px 0px 20px;
+    background:hsla(0, 7%, 95%, 0.5) 
+}
+
+.abim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* HOMEPAGE CENTER IMAGES - MOBILE */
+#aboutimg {
+    width: 11rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 20px;
+}
+#workimg {
+    width: 11rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 20px;
+}
+#blogimg {
+    width: 11rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.centerimg {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    padding-top: 10%;
+}
+
+.caption {
+    display:flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    font-weight: 1000;
+    text-decoration: none;
 }
 
 /* LOGO ICONS RESIZE */
@@ -71,35 +134,14 @@ body {
     width: 70px;
     height: 60px;
 }
-/* LOGO SECTION - MOBILE*/
-.logomain{
-    width:100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /* LOGO ALIGNMENT*/
 .logo {
-    width:180px;
-    padding: 40px 0px 150px 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0px 0px 0px 0px;
 }
 
-/* LOGO & NAME,EMAIL, MOBILE SHARED SPACE */
-.bottomcombo {
-    width: 100%;
-}
 
-.nem {
-    background-color: hsla(0, 100%, 50%, 0.2);
-}
-
-/* NAME, EMAIL & MOBILE */
+/* COPYRIGHT, NAME, EMAIL & MOBILE */
 .nameemailmobile {
     display: flex;
     flex-direction: column;
@@ -109,20 +151,103 @@ body {
     font-size: 12px;
 }
 
-/* COPYRIGHT */
 footer {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    height: 30px;
+    height: 140px;
     justify-content: center;
     align-items: center;
     font-size: 10px;
     background-color: hsla(0, 98%, 50%, 0.2);
+    position: fixed; bottom: 0; 
+    text-align: center;
+}
+
+/* ABOUT ME - WORK AND BLOG LINKS */
+#wnbwork {
+    width: 0;
+    height: 0;
+    border-radius: 0%;
+}
+
+#wnbblog {
+    width: 0;
+    height: 0;
+    border-radius: 0%;
+}
+
+.aboutcap {
+    display: none;
+}
+
+/* WORK HISTORY - BOXES (MOBILE)*/
+.workbox {
+    display:inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 40%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 1rem;
+    background-color:hsla(0, 7%, 95%, 0.5);
+}
+.allworkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 400px;
+}
+/* WORK BOX DATES */
+.strong {
+    background-color:hsla(0, 5%, 4%, 0.851);
+    color: white;
+}
+
+/* RESUME DOWNLOAD - BOX 4  */
+#resume {
+    width: 100%;
+    height: 70%;
+}
+
+/* BLOG LINKS */
+.blink {
+    background-color:hsla(0, 7%, 95%, 0.5);
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+
+/* BLOG IMAGES */
+.blogimg {
+    width: 50%;
+    height: 50%;
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+}
+
+/* BLOG IMAGE AND TEXT LAYOUT - DESKTOP */
+#btnd {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 1rem;
+    background-color: hsla(0, 7%, 95%, 0.5);
+}
+#allb1 {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* TABLET DISPLAY SIZE CONFIGURATION */
 @media only screen and (min-width: 800px) and (max-width: 1400px) {
-    
+    /* MENU NEW LAYOUT*/
     .menucombo {
         display: flex;
         flex-direction: row;
@@ -138,21 +263,227 @@ footer {
         height: 25px;
     }
 
-    .bottomcombo {
+    /* CENTER IMAGES  */
+    #aboutimg {
+        width: 15rem;
+        height: 14rem;
+        border-radius: 20%;
+    }
+    #workimg {
+        width: 15rem;
+        height: 14rem;
+        border-radius: 20%;
+    }
+    #blogimg {
+        width: 15rem;
+        height: 14rem;
+        border-radius: 20%;
+    }
+
+    .centerimg {
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .caption {
+        text-align: center;
+        text-decoration: none;
+    }
+
+    /* ABOUT ME TEXT & IMAGE  */
+    .abim {
+        margin: 100px 0px 0px 0px; 
         display: flex;
-        flex-direction: column-reverse;
-        background-color: hsla(0, 100%, 50%, 0.2);
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
     }
 
-    div.logo {
-        padding: 0;
-    }
-    .nem {
-        background-color: transparent;
+    /* ABOUT ME - WORK AND BLOG LINKS */
+    #wnbwork {
+        width: 0;
+        height: 0;
+        border-radius: 0%;
     }
 
-    #welcome {
-        width: 500px;
-        border-radius: 50%;
+    #wnbblog {
+        width: 0;
+        height: 0;
+        border-radius: 0%;
     }
+
+    #abouttext {
+        margin-right: 2rem;
+        margin-left: 1rem;
+    }
+
+    .aboutcap {
+        display: none;
+    }
+
+    /* WORK HISTORY - BOXES (TABLET)*/
+    .workbox {
+    display:inline-block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 40%;
+    height: 70%;
+    text-align: center;
+    border: 1px solid black;
+    margin: 1rem;
+    }
+    .allworkbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 400px;
+    }
+
+}
+
+/* DESKTOP DISPLAY SIZE CONFIGURATION */
+@media only screen and (min-width: 1401px) {
+    /* MENU NEW LAYOUT*/
+    .menucombo {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #menu {
+        height: 40px;
+        border-bottom: 1px solid black;
+        border-right: none;
+    }
+
+    .submenu {
+        height: 25px;
+        border-bottom: 1px solid black;
+        border-top: none;
+        border-right: none;
+    }
+
+    .subitems {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* CENTER IMAGES  */
+    #aboutimg {
+        width: 21rem;
+        height: 20rem;
+        border-radius: 0%;
+    }
+    #workimg {
+        width: 21rem;
+        height: 20rem;
+        border-radius: 0%;
+    }
+    #blogimg {
+        width: 21rem;
+        height: 20rem;
+        border-radius: 0%;
+    }
+
+    .centerimg {
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .caption {
+        text-align: center;
+        text-decoration: none;
+    }
+    
+    /* ABOUT ME TEXT & IMAGE  */
+    .abim {
+        margin: 80px 20px 0px 0px; 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:center;
+    }
+
+    .aboutcap {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+
+    #aboutimg {
+        margin-right: 40px;
+    }
+
+    /* ABOUT ME - WORK AND BLOG LINKS */
+    #wnbwork {
+        width: 15rem;
+        height: 14rem;
+        border-radius: 0%;
+    }
+
+    #wnbblog {
+        width: 15rem;
+        height: 14rem;
+        border-radius: 0%;
+        margin-top: 40px;
+    }
+
+    .worknblog {
+        margin-left: 40px;
+    }
+
+    /* WORK HISTORY - BOXES (TABLET)*/
+    .workbox {
+        display:inline-block;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 30%;
+        height: 100%;
+        text-align: center;
+        border: 1px solid black;
+        margin: 1rem;
+        }
+        .allworkbox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: 400px;
+        }
+
+        #deskresume {
+        width: 15%;
+        height: 40%;
+        }
+
+        /* BLOG IMAGES */
+        .blogimg {
+        width: 20%;
+        height: 20%;
+        margin-top: 5rem;
+        margin-bottom: 1rem;
+        margin-left: 10rem;
+        }
+        /* BLOG IMAGE AND TEXT LAYOUT - DESKTOP */
+        #btnd {
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            margin-left: 10rem;
+
+        }
+        #allb1 {
+            display:flex;
+            flex-direction: row;
+        }
+
+    
 }
