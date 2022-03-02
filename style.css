@@ -453,13 +453,13 @@ footer {
         margin-left: 40px;
     }
 
-    /* WORK HISTORY - BOXES (TABLET)*/
+    /* WORK HISTORY - BOXES (DESKTOP)*/
     .workbox {
         display:inline-block;
         flex-direction: row;
         flex-wrap: wrap;
         width: 30%;
-        height: 100%;
+        height: 400px;
         text-align: center;
         border: 1px solid black;
         margin: 1rem;
@@ -469,7 +469,7 @@ footer {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-evenly;
-        height: 400px;
+        height: 100%;
         width:100%;
         }
 
@@ -478,7 +478,7 @@ footer {
         height: 40%;
         }
 
-        /* WORK TEXT FOR TABLET ONLY  */
+        /* WORK TEXT FOR DESKTOP ONLY  */
         .tabwktxt {
             display:flex;
             text-align:left;
