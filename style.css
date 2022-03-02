@@ -206,6 +206,15 @@ footer {
     color: white;
 }
 
+/* WORK TEXT FOR MOBILE ONLY  */
+.tabwktxt {
+    display: none;
+}
+
+.deskwktxt {
+    display:none;
+}
+
 /* RESUME DOWNLOAD - BOX 4  */
 #resume {
     width: 100%;
@@ -342,6 +351,13 @@ footer {
     height: 400px;
     }
 
+    /* WORK TEXT FOR TABLET ONLY  */
+    .tabwktxt {
+        display:flex;
+        text-align:left;
+        padding:1rem;
+    }
+
 }
 
 /* DESKTOP DISPLAY SIZE CONFIGURATION */
@@ -454,11 +470,25 @@ footer {
         flex-wrap: wrap;
         justify-content: space-evenly;
         height: 400px;
+        width:100%;
         }
 
         #deskresume {
         width: 15%;
         height: 40%;
+        }
+
+        /* WORK TEXT FOR TABLET ONLY  */
+        .tabwktxt {
+            display:flex;
+            text-align:left;
+            padding:1rem;
+        }
+
+        .deskwktxt {
+            display:flex;
+            text-align:left;
+            padding:1rem;
         }
 
         /* BLOG IMAGES */
