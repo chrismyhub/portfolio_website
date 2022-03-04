@@ -359,6 +359,12 @@ footer {
         align-items:center;
     }
 
+    #aboutimg {
+        width: 15rem;
+        height: 14rem;
+        border-radius: 50%;
+    }
+
     /* WORK HISTORY - BOXES (DESKTOP) (component)*/
     .workbox {
         display:inline-block;
