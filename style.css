@@ -20,7 +20,7 @@ body {
 }
 
 /* MOBILE DISPLAY SIZE CONFIGURATION -------------------------------------- */
-/* WELCOME IMAGE AND TEXT  */
+/* WELCOME IMAGE AND TEXT (component) */
 #welcome {
     display: flex;
     width:20rem;
@@ -58,7 +58,7 @@ body {
     align-items: center;
 }
 
-/* MENU & SUB-MENU CONTAINER */
+/* MENU & SUB-MENU CONTAINER (component)*/
 .menucombo{
     display:flex;
     flex-direction: column;
@@ -66,7 +66,6 @@ body {
     background-color: rgb(249, 247, 247);
 }
 
-/* ABOUT ME, WORK HISTORY & BLOG BOXES */
 .submenu {
     display:flex;
     width: 100%;
@@ -80,7 +79,7 @@ body {
     text-decoration: none;
 }
 
-/* SUB-MENU CONTAINER */
+/* SUB-MENU CONTAINER (component)*/
 .subitems{
     display:flex;
     flex-direction: column;
@@ -92,7 +91,7 @@ body {
     border-bottom: 1px solid black;
 }
 
-/* ABOUT ME/WORK HISTORY - TITLE & IMAGE */
+/* ABOUT ME - TITLE & IMAGE (component)*/
 
 #abouttext {
     padding: 0px 20px 0px 20px;
@@ -108,44 +107,12 @@ body {
     height: 100%;
 }
 
-/* HOMEPAGE CENTER IMAGES - MOBILE */
+/* ABOUT ME IMAGE - MOBILE */
 #aboutimg {
     width: 11rem;
     height: 10rem;
     border-radius: 50%;
     margin: 20px;
-}
-#workimg {
-    width: 11rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin: 20px;
-}
-#blogimg {
-    width: 11rem;
-    height: 10rem;
-    border-radius: 50%;
-    margin: 20px;
-}
-
-.centerimg {
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    align-items: center;
-    width: 100%;
-}
-
-.caption {
-    display:flex;
-    width: 100%;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    font-size: large;
-    font-weight: 1000;
-    text-decoration: none;
 }
 
 /* LOGO ICONS RESIZE */
@@ -160,7 +127,7 @@ body {
 }
 
 
-/* COPYRIGHT, NAME, EMAIL & MOBILE */
+/* FOOTER COMBO (component)*/
 .nameemailmobile {
     display: flex;
     flex-direction: column;
@@ -184,24 +151,8 @@ footer {
     z-index: 500;
 }
 
-/* ABOUT ME - WORK AND BLOG LINKS */
-#wnbwork {
-    width: 0;
-    height: 0;
-    border-radius: 0%;
-}
 
-#wnbblog {
-    width: 0;
-    height: 0;
-    border-radius: 0%;
-}
-
-.aboutcap {
-    display: none;
-}
-
-/* WORK HISTORY - BOXES (MOBILE)*/
+/* WORK HISTORY - BOXES (MOBILE) (component)*/
 .workbox {
     display:inline-block;
     flex-direction: row;
@@ -226,7 +177,7 @@ footer {
     color: white;
 }
 
-/* WORK TEXT FOR MOBILE ONLY  */
+/* WORK TEXT FOR MOBILE ONLY  (component)*/
 .tabwktxt {
     display: none;
 }
@@ -262,7 +213,7 @@ footer {
     margin-bottom: 1rem;
 }
 
-/* BLOG IMAGE AND TEXT LAYOUT - MOBILE */
+/* BLOG IMAGE AND TEXT LAYOUT - MOBILE (component)*/
 .btnd {
     display:flex;
     flex-wrap: wrap;
@@ -280,7 +231,7 @@ footer {
 
 /* TABLET DISPLAY SIZE CONFIGURATION ------------------------------------ */
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
-    /* WELCOME IMAGE AND TEXT  */
+    /* WELCOME IMAGE AND TEXT  (component)*/
     .imgntext {
         display: flex;
         flex-direction: row;
@@ -290,7 +241,7 @@ footer {
         width:20rem;
     }
     
-    /* MENU NEW LAYOUT*/
+    /* MENU NEW LAYOUT (component)*/
     .menucombo {
         display: flex;
         flex-direction: row;
@@ -306,36 +257,14 @@ footer {
         height: 25px;
     }
 
-    /* CENTER IMAGES  */
+    /* ABOUT IMAGE  */
     #aboutimg {
         width: 15rem;
         height: 14rem;
         border-radius: 50%;
     }
-    #workimg {
-        width: 15rem;
-        height: 14rem;
-        border-radius: 50%;
-    }
-    #blogimg {
-        width: 15rem;
-        height: 14rem;
-        border-radius: 50%;
-    }
-
-    .centerimg {
-        display:flex;
-        justify-content:space-evenly;
-        align-items: center;
-        width: 100%;
-    }
-
-    .caption {
-        text-align: center;
-        text-decoration: none;
-    }
-
-    /* ABOUT ME TEXT & IMAGE  */
+    
+    /* ABOUT ME TEXT & IMAGE  (component)*/
     .abim {
         margin: 0px 0px 0px 0px; 
         display: flex;
@@ -344,17 +273,14 @@ footer {
         align-items:center;
     }
 
-    /* ABOUT ME - WORK AND BLOG LINKS */
+    /* ABOUT ME - TEXT */
     #abouttext {
         margin-right: 2rem;
         margin-left: 1rem;
     }
 
-    .aboutcap {
-        display: none;
-    }
-
-    /* WORK HISTORY - BOXES (TABLET)*/
+  
+    /* WORK HISTORY - BOXES (TABLET) (component)*/
     .workbox {
     display:inline-block;
     flex-direction: row;
@@ -384,7 +310,7 @@ footer {
 
 /* DESKTOP DISPLAY SIZE CONFIGURATION ------------------------------------*/
 @media only screen and (min-width: 1201px) {
-    /* WELCOME IMAGE AND TEXT  */
+    /* WELCOME IMAGE AND TEXT  (component)*/
     .imgntext {
         display: flex;
         flex-direction: row;
@@ -394,7 +320,7 @@ footer {
         width:20rem;
     }
     
-    /* MENU NEW LAYOUT*/
+    /* MENU NEW LAYOUT (component)*/
     .menucombo {
         display: flex;
         flex-direction: column;
@@ -417,30 +343,8 @@ footer {
         display: flex;
         flex-direction: row;
     }
-
-    /* CENTER IMAGES  */
-    #aboutimg {
-        width: 21rem;
-        height: 20rem;
-        border-radius: 50%;
-    }
-    #workimg {
-        width: 21rem;
-        height: 20rem;
-        border-radius: 50%;
-    }
-    #blogimg {
-        width: 21rem;
-        height: 20rem;
-        border-radius: 50%;
-    }
-
-    .caption {
-        text-align: center;
-        text-decoration: none;
-    }
     
-    /* ABOUT ME TEXT & IMAGE  */
+    /* ABOUT ME TEXT & IMAGE  (component)*/
     .abim {
         margin: 80px 20px 0px 0px; 
         display: flex;
@@ -455,7 +359,7 @@ footer {
         align-items:center;
     }
 
-    /* WORK HISTORY - BOXES (DESKTOP)*/
+    /* WORK HISTORY - BOXES (DESKTOP) (component)*/
     .workbox {
         display:inline-block;
         flex-direction: row;
@@ -501,7 +405,7 @@ footer {
         margin-bottom: 1rem;
         margin-left: 10rem;
         }
-        /* BLOG IMAGE AND TEXT LAYOUT - DESKTOP */
+        /* BLOG IMAGE AND TEXT LAYOUT - DESKTOP (component)*/
         #btnd {
             display:flex;
             flex-wrap: wrap;
