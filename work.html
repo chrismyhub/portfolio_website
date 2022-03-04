@@ -8,18 +8,22 @@
 
     <!-- LINK TO STYLE SHEET -->
     <link rel="stylesheet" href="style.css">
+
+     <!-- LINK TO GOOGLE FONT  -->
+     <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro' rel='stylesheet'>
+    
 </head>
 <body>
     <!-- MENU & SUB-MENU CONTAINER -->
     <div class="menucombo">
         <!-- MENU -->
-        <h1 id="menu">MENU</h1>
+        <a href="index.html"><img id="menu" src="home.svg" alt="home icon"></a>
 
         <!-- SUB-MENU SECTION -->
         <div class="subitems">
-        <a href="index.html" class="submenu" id="homepage">Home</a>
-        <a href="about.html" class="submenu" id="about">About Me</a>
-        <a href="blog.html" class="submenu" id="blog">Blog</a>
+            <a style="color: black" href="about.html" class="submenu" id="aboutme">ABOUT ME</a>
+            <a style="color: white; background-color:#FF9912" href="work.html" class="submenu" id="workhistory">WORK HISTORY</a>
+            <a style="color: black" href="blog.html" class="submenu" id="blog">BLOG</a>
         </div>
     </div>  
     <!-- WORK HISTORY TITLE  -->
@@ -27,12 +31,11 @@
 
     <!-- WORK TEXT BOX 1 -->
     <div class="allworkbox">
-    <p class="workbox"><strong class="strong">2022-Current</strong><br><br>Coder Academy <br>- Student -
+    <p id="codeback" class="workbox"><strong class="strong">2022-Current</strong><br><br>Coder Academy <br>- Student -
         <br>
         <br>
         <span class="tabwktxt">Currently studying and workshoping HTML, CSS, Git and Ruby.</span>
         <span class="deskwktxt">Additional Languages that will be learnt by the end of the course include: Ruby on Rails, Java Script, React and Node.
-
         </span>
     </p>
 
@@ -70,12 +73,12 @@
  
     <!-- LINK TO RESUME -->
     <a class="workbox" id="deskresume" href="resume.pdf">
-        <img id="resume" src="imgplace.jpg" alt="resume image">
+        <img id="resume" src="resume.jpg" alt="resume image">
         <figcaption class="resumecap"> DOWNLOAD RESUME</figcaption>
     </a>
     </div>
 
-</body>
+
 
 <footer>
     <!-- LOGO SECTION -->
@@ -89,13 +92,11 @@
     </div>
 
     <!-- NAME, EMAIL & MOBILE -->
-    <strong>
-        <h2 class="nameemailmobile" id="name">Christopher Chong</h2>
-        <h2 class="nameemailmobile" id="email">keyoch@gmail.com</h2>
-        <h2 class="nameemailmobile" id="mobile">0400 587 273</h2>
+        <h2 class="nameemailmobile" id="name"><strong>Christopher Chong</strong></h2>
+        <h2 class="nameemailmobile" id="email"><strong>keyoch@gmail.com</strong></h2>
+        <h2 class="nameemailmobile" id="mobile"><strong>0400 587 273</strong></h2>
         <!-- COPYRIGHT -->
-        &copy;Copyright 2022.  All Rights Reserved.
-    </strong>
+        <span style="font-family:'Courier New', Courier, monospace"> &copy; Copyright 2022.  All Rights Reserved.</span>
 </footer>
-
+</body>
     </html>

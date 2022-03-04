@@ -8,18 +8,22 @@
 
     <!-- LINK TO STYLE SHEET -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- LINK TO GOOGLE FONT  -->
+    <link href='https://fonts.googleapis.com/css2?family=Source+Sans+Pro' rel='stylesheet'>
+    
 </head>
 <body>
     <!-- MENU & SUB-MENU CONTAINER -->
     <div class="menucombo">
         <!-- MENU -->
-        <h1 id="menu">MENU</h1>
+        <a href="index.html"><img id="menu" src="home.svg" alt="home icon"></a>
 
         <!-- SUB-MENU SECTION -->
         <div class="subitems">
-        <a href="index.html" class="submenu" id="homepage">Home</a>
-        <a href="work.html" class="submenu" id="workhistory">Work History</a>
-        <a href="blog.html" class="submenu" id="blog">Blog</a>
+            <a style="color: white; background-color:#FF9912" href="about.html" class="submenu" id="aboutme">ABOUT ME</a>
+            <a style="color: black" href="work.html" class="submenu" id="workhistory">WORK HISTORY</a>
+            <a style="color: black" href="blog.html" class="submenu" id="blog">BLOG</a>
         </div>
     </div>
     <!-- ABOUT ME TITLE  -->
@@ -27,7 +31,7 @@
 
     <!-- ABOUT ME IMAGE -->
     <div class="abim">
-    <img id="aboutimg" src="imgplace.jpg" alt="about me image">
+    <img id="aboutimg" src="about.jpg" alt="about me image">
     <p id="abouttext">Aspiring Web Developer, currently undertaking a Diploma of Information Technology with Coder Academy and aim to complete my studies in July 2022.  I have always found myself using code in one way or another over my working career.  Whether it be using formula’s in Microsoft Excel to help save time whilst maintaining accuracy or using a system of code to locate a record in a repository or organise a project using a Work Breakdown Structure.  Of course nothing as complex as HTML, CSS or Ruby.  Which is what drew me to Coder Academy, to get to the roots of coding, its language.  To learn and use it to build more complex things.
         <br>
         <br>
@@ -36,22 +40,11 @@
         <br>
         In my down time (if there is any when you have kids), I enjoy the occasional movie or tv series, but I enjoy solving/fixing things most.  This includes things like jig saw/word puzzles, an Excel problem or a home renovation issue.  I find satisfaction in providing a solution to a problem.
     </p>
- 
-    <!-- LINKS TO WORK AND BLOG -->
-    <figure class="worknblog">
-        <a href="work.html">
-            <img id="wnbwork" src="imgplace.jpg" alt="work image">
-            <figcaption class="aboutcap">WORK HISTORY</figcaption>
-        </a>
-        <a href="blog.html">
-            <img id="wnbblog" src="imgplace.jpg" alt="blog image">
-            <figcaption class="aboutcap">BLOG</figcaption>
-        </a>
-    </figure>
+
     </div>
 
 
-</body>
+
 
 <footer>
     <!-- LOGO SECTION -->
@@ -70,8 +63,8 @@
         <h2 class="nameemailmobile" id="email">keyoch@gmail.com</h2>
         <h2 class="nameemailmobile" id="mobile">0400 587 273</h2>
         <!-- COPYRIGHT -->
-        &copy;Copyright 2022.  All Rights Reserved.
+        <span style="font-family:'Courier New', Courier, monospace"> &copy; Copyright 2022.  All Rights Reserved.</span>
     </strong>
 </footer>
-
+</body>
     </html>
